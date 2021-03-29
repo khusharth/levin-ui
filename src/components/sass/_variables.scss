@@ -1,4 +1,5 @@
 :root {
+  // Colors
   --color-primary-light-1: #e685f4;
   --color-primary-light-2: #df65f2;
   --color-primary-light: #d946ef;
@@ -19,7 +20,28 @@
   --color-grey-dark-2: #444;
   --color-grey-dark-3: #252525;
 
+  --gradient-success: #1e4620;
+  --gradient-success-bg: #edf7ed;
+  --gradient-success-icon: #4caf50;
+
+  --gradient-error: #611a15;
+  --gradient-error-bg: #fdecea;
+  --gradient-error-icon: #f44336;
+
+  --gradient-warning: #663c00;
+  --gradient-warning-bg: #fff4e5;
+  --gradient-warning-icon: #ff9800;
+
   // BOX SHADOW
   --shadow-light: 0 2px 5px rgba(0, 0, 0, 0.2);
   --shadow-dark: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+  // FONT SIZE
+  --gradient-font-8: 0.8rem;
+  --gradient-font-10: 0.625rem;
+  --gradient-font-12: 0.75rem;
+  --gradient-font-14: 0.875rem;
+  --gradient-font-16: 1rem;
+  --gradient-font-18: 1.125rem;
+  --gradient-font-20: 1.25rem;
 }
