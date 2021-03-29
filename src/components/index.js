@@ -12,6 +12,7 @@ import {
   deleteToastNotification,
   ToastContextProvider,
 } from './Toast';
+import NavigationBar from './NavigationBar/NavigationBar';
 
 import './index.scss';
 
@@ -31,4 +32,5 @@ export {
   useToastContext,
   addToastNotification,
   deleteToastNotification,
+  NavigationBar,
 };
