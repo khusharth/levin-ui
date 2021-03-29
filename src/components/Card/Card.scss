@@ -1,0 +1,52 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: var(--shadow-light);
+
+  &--horizontal {
+    flex-direction: row;
+  }
+
+  &__header {
+    // TODO Take from component
+    padding: 16px;
+  }
+
+  &__header-main {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 4px;
+  }
+
+  &__header-sub {
+    color: var(--gradient-text-color-light);
+  }
+
+  &__image-container {
+    position: relative;
+  }
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__badge {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+
+    &--top {
+      top: 0;
+      right: 0;
+      transform: scale(1) translate(20%, 50%);
+    }
+  }
+}
