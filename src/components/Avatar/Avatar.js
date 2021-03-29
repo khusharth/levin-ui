@@ -14,7 +14,7 @@ AvatarGroup.defaultProps = {
   className: '',
 };
 
-function Avatar({ className, image, alt, size, type, displayBadge }) {
+function Avatar({ className, image, alt, size, type, showBadge, badgeColor }) {
   const [src, setSrc] = useState(image || AvatarPlaceholder);
 
   return (
@@ -25,10 +25,10 @@ function Avatar({ className, image, alt, size, type, displayBadge }) {
         alt={alt}
         onError={() => setSrc(AvatarPlaceholder)}
       />
-      {displayBadge && (
+      {showBadge && (
         <Badge
           size="md"
-          color="error"
+          color={badgeColor}
           type={type}
           className={`avatar__badge avatar__badge--${size}`}
         ></Badge>
@@ -42,7 +42,8 @@ Avatar.defaultProps = {
   alt: '',
   type: 'round',
   size: 'md',
-  displayBadge: false,
+  showBadge: false,
+  badgeColor: 'error',
 };
 
 Avatar.propTypes = {
@@ -51,9 +52,8 @@ Avatar.propTypes = {
   alt: PropTypes.string,
   type: PropTypes.oneOf(['round', 'square']),
   size: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl']),
-  displayBadge: PropTypes.bool,
+  showBadge: PropTypes.bool,
+  badgeColor: PropTypes.string,
 };
 
 export { AvatarGroup, Avatar };
-
-export default Avatar;

@@ -85,14 +85,14 @@ export function WithBadge() {
         className="mr-8"
         size="lg"
         image="https://images.dog.ceo/breeds/terrier-australian/n02096294_5466.jpg"
-        displayBadge
+        showBadge
       />
       <Avatar
         className="mr-8"
         size="lg"
         type="square"
         image="https://images.dog.ceo/breeds/terrier-australian/n02096294_5466.jpg"
-        displayBadge
+        showBadge
       />
     </AvatarGroup>
   );
