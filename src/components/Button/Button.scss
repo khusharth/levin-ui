@@ -3,7 +3,7 @@
   &:link,
   &:visited {
     text-decoration: none;
-    padding: 0.8rem 1.6rem;
+    padding: 0.4rem 1rem;
     font-weight: 700;
     font-size: 1rem;
     font-family: inherit;
@@ -38,7 +38,9 @@
   }
 
   &:focus {
-    outline: thin dotted;
+    // TODO Add focus style
+    outline: none;
+    // outline: thin dotted white;
   }
 
   &:disabled {

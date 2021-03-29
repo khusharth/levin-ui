@@ -43,7 +43,7 @@ Avatar.defaultProps = {
   type: 'round',
   size: 'md',
   showBadge: false,
-  badgeColor: 'error',
+  badgeColor: 'danger',
 };
 
 Avatar.propTypes = {

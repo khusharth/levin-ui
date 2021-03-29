@@ -10,28 +10,24 @@ import PropTypes from 'prop-types';
 import './Alert.scss';
 
 function Alert({ text, type, className }) {
-  let icon;
-  switch (type) {
-    case 'error':
-      icon = <MdErrorOutline />;
-      break;
-    case 'warning':
-      icon = <MdWarning />;
-      break;
-    case 'success':
-      icon = <MdDone />;
-      break;
-    case 'info':
-      icon = <MdInfoOutline />;
-      break;
-    default:
-      icon = <MdInfoOutline />;
-      break;
+  function generateIcon(type) {
+    switch (type) {
+      case 'danger':
+        return <MdErrorOutline />;
+      case 'warning':
+        return <MdWarning />;
+      case 'success':
+        return <MdDone />;
+      case 'info':
+        return <MdInfoOutline />;
+      default:
+        return;
+    }
   }
 
   return (
     <div className={`alert alert--${type} ${className}`}>
-      <span className="alert__icon">{icon}</span>
+      <span className="alert__icon">{generateIcon(type)}</span>
       <div className="alert__text">{text}</div>
     </div>
   );
@@ -44,7 +40,7 @@ Alert.defaultProps = {
 
 Alert.propTypes = {
   className: PropTypes.string,
-  type: PropTypes.oneOf(['info', 'success', 'error', 'warning']),
+  type: PropTypes.oneOf(['info', 'success', 'danger', 'warning']),
   text: PropTypes.string.isRequired,
 };
 

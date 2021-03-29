@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import PropTypes from 'prop-types';
-import { Button } from '../../components';
 
 import './Modal.scss';
 

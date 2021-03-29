@@ -62,3 +62,41 @@
 .ml-12 {
   margin-left: 12px;
 }
+
+// Padding
+.p-4 {
+  padding: 4px;
+}
+
+.p-8 {
+  padding: 8px;
+}
+
+.p-12 {
+  padding: 12px;
+}
+
+.p-16 {
+  padding: 12px;
+}
+
+// WIDTH
+.full-width {
+  width: 100%;
+}
+
+// GRID
+.row {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1 0 0;
+}
+
+// Text
+.text-center {
+  text-align: center;
+}

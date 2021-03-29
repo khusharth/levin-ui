@@ -23,7 +23,7 @@ Badge.defaultProps = {
 Badge.propTypes = {
   className: PropTypes.string,
   type: PropTypes.oneOf(['default', 'round']),
-  color: PropTypes.oneOf(['primary', 'error']),
+  color: PropTypes.oneOf(['primary', 'danger']),
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
 };
 
