@@ -34,11 +34,12 @@ Button.defaultProps = {
   btnType: '',
   className: '',
   size: 'md',
+  type: 'default',
 };
 
 Button.propTypes = {
   className: PropTypes.string,
-  type: PropTypes.oneOf(['primary', 'secondary', 'icon']),
+  type: PropTypes.oneOf(['default', 'outlined', 'icon']),
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
   disabled: PropTypes.bool,
   onClick: PropTypes.func,

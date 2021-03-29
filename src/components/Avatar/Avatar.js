@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { Badge } from '../../components';
+
 import AvatarPlaceholder from '../../assets/avatar.png';
 
 import './Avatar.scss';
@@ -24,7 +26,12 @@ function Avatar({ className, image, alt, size, type, displayBadge }) {
         onError={() => setSrc(AvatarPlaceholder)}
       />
       {displayBadge && (
-        <div className={`avatar__badge avatar__badge--${size}`}></div>
+        <Badge
+          size="md"
+          color="error"
+          type={type}
+          className={`avatar__badge avatar__badge--${size}`}
+        ></Badge>
       )}
     </figure>
   );
@@ -33,7 +40,7 @@ function Avatar({ className, image, alt, size, type, displayBadge }) {
 Avatar.defaultProps = {
   className: '',
   alt: '',
-  type: 'circle',
+  type: 'round',
   size: 'md',
   displayBadge: false,
 };
@@ -42,7 +49,7 @@ Avatar.propTypes = {
   className: PropTypes.string,
   image: PropTypes.string,
   alt: PropTypes.string,
-  type: PropTypes.oneOf(['circle', 'square']),
+  type: PropTypes.oneOf(['round', 'square']),
   size: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl']),
   displayBadge: PropTypes.bool,
 };

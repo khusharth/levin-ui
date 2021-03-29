@@ -8,33 +8,27 @@ const containerStyle = {
   width: '500px',
 };
 
-export function PrimaryButton() {
+export function DefaultButton() {
   return (
     <div style={containerStyle}>
-      <Button size="sm" type="primary">
-        Primary
-      </Button>
-      <Button size="md" type="primary">
-        Primary
-      </Button>
-      <Button size="lg" type="primary">
-        Primary
-      </Button>
+      <Button size="sm">Primary</Button>
+      <Button size="md">Primary</Button>
+      <Button size="lg">Primary</Button>
     </div>
   );
 }
 
-export function SecondaryButton() {
+export function OutlinedButton() {
   return (
     <div style={containerStyle}>
-      <Button size="sm" type="secondary">
-        Secondary
+      <Button size="sm" type="outlined">
+        Outlined
       </Button>
-      <Button size="md" type="secondary">
-        Secondary
+      <Button size="md" type="outlined">
+        Outlined
       </Button>
-      <Button size="lg" type="secondary">
-        Secondary
+      <Button size="lg" type="outlined">
+        Outlined
       </Button>
     </div>
   );

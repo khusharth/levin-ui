@@ -10,8 +10,8 @@
     display: flex;
   }
 
-  &--circle,
-  &--circle img {
+  &--round,
+  &--round img {
     border-radius: 50%;
   }
 
@@ -48,21 +48,18 @@
   }
 
   &__badge {
-    display: flex;
     z-index: 1;
     position: absolute;
-    font-size: 0.75rem;
-    align-items: center;
-    font-family: inherit;
-    align-content: center;
-    border-radius: 50%;
-    color: #44b700;
     box-shadow: 0 0 0 2px #fff;
-    background-color: #44b700;
     right: 15%;
     bottom: 15%;
     transform: scale(1) translate(50%, 50%);
     transform-origin: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
 
     &--xs {
       height: 8px;
@@ -91,7 +88,6 @@
   }
 
   &--square &__badge {
-    border-radius: 0;
     right: 3%;
     bottom: 3%;
   }

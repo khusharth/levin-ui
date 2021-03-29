@@ -2,7 +2,7 @@ import React from 'react';
 import { MdSearch } from 'react-icons/md';
 import { Avatar, AvatarGroup } from '../../components';
 
-export function Circle() {
+export function Round() {
   return (
     <AvatarGroup>
       <Avatar
@@ -84,10 +84,16 @@ export function WithBadge() {
       <Avatar
         className="mr-8"
         size="lg"
-        image="https://images.dog.ceo/breeds/terrier-australian/n02096294_546.jpg"
+        image="https://images.dog.ceo/breeds/terrier-australian/n02096294_5466.jpg"
         displayBadge
       />
-      <Avatar className="mr-8" size="lg" type="square" image="" displayBadge />
+      <Avatar
+        className="mr-8"
+        size="lg"
+        type="square"
+        image="https://images.dog.ceo/breeds/terrier-australian/n02096294_5466.jpg"
+        displayBadge
+      />
     </AvatarGroup>
   );
 }
