@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Badge } from '../../components';
 
 import './Card.scss';
@@ -25,6 +26,13 @@ Card.defaultProps = {
   className: '',
 };
 
+Card.propTypes = {
+  horizontal: PropTypes.bool,
+  showBadge: PropTypes.bool,
+  badgePosition: PropTypes.string,
+  className: PropTypes.string,
+};
+
 function CardHeader({ className, header, subheader }) {
   return (
     <div className={`card__header ${className}`}>
@@ -33,6 +41,18 @@ function CardHeader({ className, header, subheader }) {
     </div>
   );
 }
+
+CardHeader.defaultProps = {
+  header: '',
+  subheader: '',
+  className: '',
+};
+
+CardHeader.propTypes = {
+  header: PropTypes.string.isRequired,
+  subheader: PropTypes.string,
+  className: PropTypes.string,
+};
 
 function CardImage({ className, image, alt }) {
   return (
@@ -44,11 +64,14 @@ function CardImage({ className, image, alt }) {
 
 CardImage.defaultProps = {
   alt: '',
+  image: '',
   className: '',
 };
 
-function CardFooter({ className, children }) {
-  return <div className={`card__footer ${className}`}>{children}</div>;
-}
+CardImage.propTypes = {
+  alt: PropTypes.string,
+  image: PropTypes.string.isRequired,
+  className: PropTypes.string,
+};
 
-export { Card, CardHeader, CardImage, CardFooter };
+export { Card, CardHeader, CardImage };
