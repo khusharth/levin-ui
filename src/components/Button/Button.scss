@@ -3,7 +3,7 @@
   &:link,
   &:visited {
     text-decoration: none;
-    padding: 0.4rem 1rem;
+    padding: 0.8rem 1.5rem;
     font-weight: 700;
     font-size: 1rem;
     font-family: inherit;
@@ -11,7 +11,6 @@
     border-radius: 0.5rem;
     transition: all 0.2s;
     box-shadow: var(--shadow-light);
-    position: relative;
     border: none;
     cursor: pointer;
   }

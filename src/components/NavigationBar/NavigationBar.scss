@@ -1,6 +1,7 @@
 .navigation {
   box-shadow: var(--shadow-dark);
   width: 100%;
+  min-height: 4rem;
 
   &__container {
     display: flex;
@@ -8,7 +9,11 @@
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0.875rem 0rem;
+    padding: 1rem 0rem;
+
+    @media screen and (max-width: 1200px) {
+      padding: 1rem;
+    }
   }
 
   &__logo {
