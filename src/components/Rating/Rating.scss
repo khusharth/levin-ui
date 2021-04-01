@@ -1,0 +1,28 @@
+.rating {
+  cursor: pointer;
+  transition: color 0.2s;
+
+  &__input {
+    display: none;
+  }
+
+  &--default {
+    color: #ffb400;
+  }
+
+  &--primary {
+    color: var(--color-primary-dark-1);
+  }
+
+  &--success {
+    color: var(--gradient-success-icon);
+  }
+
+  &--danger {
+    color: var(--gradient-danger-icon);
+  }
+
+  &--warning {
+    color: var(--gradient-warning-icon);
+  }
+}

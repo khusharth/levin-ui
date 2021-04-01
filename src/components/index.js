@@ -15,6 +15,7 @@ import {
 import NavigationBar from './NavigationBar/NavigationBar';
 import List from './List/List';
 import { ListItem } from './List/List';
+import Rating from './Rating/Rating';
 
 import './index.scss';
 
@@ -37,4 +38,5 @@ export {
   NavigationBar,
   List,
   ListItem,
+  Rating,
 };
