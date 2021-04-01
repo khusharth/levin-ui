@@ -13,8 +13,11 @@
   --color-primary-dark-5: #7114c5;
   --color-primary-dark-bg: #f5ecfd;
 
+  // TODO Proper Names
   --color-grey-light-1: #f7f7f7;
   --color-grey-light-2: #edeef7;
+
+  --gradient-border-color: #eee;
 
   --gradient-text-color-light: #777;
   --gradient-text-color-dark: #252525;
@@ -24,9 +27,9 @@
   --gradient-success-icon: #4caf50;
 
   // TODO error to danger
-  --gradient-error: #611a15;
-  --gradient-error-bg: #fdecea;
-  --gradient-error-icon: #f44336;
+  --gradient-danger: #611a15;
+  --gradient-danger-bg: #fdecea;
+  --gradient-danger-icon: #f44336;
 
   --gradient-warning: #663c00;
   --gradient-warning-bg: #fff4e5;
@@ -44,4 +47,17 @@
   --gradient-font-16: 1rem;
   --gradient-font-18: 1.125rem;
   --gradient-font-20: 1.25rem;
+
+  // Spacing
+  --gradient-spacing-0: 0rem; // 0
+  --gradient-spacing-1: 0.25rem; // 4
+  --gradient-spacing-2: 0.5rem; // 8
+  --gradient-spacing-3: 0.75rem; // 12
+  --gradient-spacing-4: 1rem; // 16
+  --gradient-spacing-5: 1.25rem; // 20
+  --gradient-spacing-6: 1.5rem; // 24
+  --gradient-spacing-7: 2rem; // 32
+  --gradient-spacing-8: 2.5rem; // 40
+  --gradient-spacing-9: 3rem; // 48
+  --gradient-spacing-10: 4rem; // 64
 }

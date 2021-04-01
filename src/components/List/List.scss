@@ -1,0 +1,22 @@
+.list {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+
+  &--horizontal {
+    flex-direction: row;
+  }
+}
+
+.list-item {
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--divider {
+    border-bottom: 1px solid var(--gradient-border-color);
+  }
+}

@@ -13,6 +13,8 @@ import {
   ToastContextProvider,
 } from './Toast';
 import NavigationBar from './NavigationBar/NavigationBar';
+import List from './List/List';
+import { ListItem } from './List/List';
 
 import './index.scss';
 
@@ -33,4 +35,6 @@ export {
   addToastNotification,
   deleteToastNotification,
   NavigationBar,
+  List,
+  ListItem,
 };
