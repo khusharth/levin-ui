@@ -2,7 +2,7 @@ import React from 'react';
 import { FaGithub, FaSun } from 'react-icons/fa';
 import { NavigationBar, Button } from '../../components';
 
-import gradientUI from '../../assets/gradientUI.svg';
+import gradientUI from '../../assets/violetUI.svg';
 
 export function SimpleNavigation() {
   return (
