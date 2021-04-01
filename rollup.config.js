@@ -1,11 +1,16 @@
 import babel from 'rollup-plugin-babel';
-import resolve from '@rollup/plugin-node-resolve';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
 import external from 'rollup-plugin-peer-deps-external';
-import sass from 'rollup-plugin-sass';
+import scss from 'rollup-plugin-scss';
+import image from '@rollup/plugin-image';
+import autoprefixer from 'autoprefixer';
+import postcss from 'postcss';
+import { terser } from 'rollup-plugin-terser';
 
 export default [
   {
-    input: './src/index.js',
+    input: './src/components/index.js',
     output: [
       {
         file: 'dist/index.js',
@@ -18,13 +23,23 @@ export default [
       },
     ],
     plugins: [
-      sass({ insert: true }),
+      scss({
+        failOnError: true,
+        outputStyle: 'compressed',
+        processor: (css) =>
+          postcss([autoprefixer])
+            .process(css)
+            .then((result) => result.css),
+      }),
+      image(),
       babel({
-        exclude: 'node_modules/**',
+        exclude: '/node_modules/**',
         presets: ['@babel/preset-react'],
       }),
       external(),
-      resolve(),
+      nodeResolve(),
+      commonjs(),
+      // terser(),
     ],
   },
 ];
