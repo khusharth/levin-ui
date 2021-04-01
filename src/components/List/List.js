@@ -8,7 +8,9 @@ function List({ children, className, spacing, horizontal }) {
   const horizontalClass = `${horizontal ? 'list--horizontal' : ''}`;
 
   return (
-    <ul className={`list__container ${padding} ${horizontalClass} ${className}`}>
+    <ul
+      className={`list__container ${padding} ${horizontalClass} ${className}`}
+    >
       {children}
     </ul>
   );
@@ -17,11 +19,13 @@ function List({ children, className, spacing, horizontal }) {
 List.defaultProps = {
   className: '',
   spacing: 1,
+  horizontal: false,
 };
 
-List.prototypes = {
+List.propTypes = {
   className: PropTypes.string,
   spacing: PropTypes.number,
+  horizontal: PropTypes.bool,
 };
 
 function ListItem({ children, className, color, divider, spacing }) {
@@ -46,7 +50,7 @@ ListItem.defaultProps = {
   spacing: 1,
 };
 
-ListItem.prototypes = {
+ListItem.propTypes = {
   className: PropTypes.string,
   color: PropTypes.string,
   divider: PropTypes.bool,
