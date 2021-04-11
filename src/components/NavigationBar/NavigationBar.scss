@@ -2,6 +2,7 @@
   box-shadow: var(--shadow-dark);
   width: 100%;
   min-height: 4rem;
+  background-color: #fff;
 
   &__container {
     display: flex;
@@ -27,6 +28,7 @@
     right: 0;
     left: 0;
     position: fixed;
+    z-index: 9999;
   }
 
   &__list {

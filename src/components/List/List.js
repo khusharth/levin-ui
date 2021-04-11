@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import './List.scss';
 
 function List({ children, className, spacing, horizontal }) {
-  const padding = `p-${spacing}`;
+  const padding = `s-${spacing}`;
   const horizontalClass = `${horizontal ? 'list--horizontal' : ''}`;
 
   return (
@@ -52,7 +52,13 @@ ListItem.defaultProps = {
 
 ListItem.propTypes = {
   className: PropTypes.string,
-  color: PropTypes.string,
+  color: PropTypes.oneOf([
+    'default',
+    'primary',
+    'danger',
+    'warning',
+    'success',
+  ]),
   divider: PropTypes.bool,
   spacing: PropTypes.number,
 };

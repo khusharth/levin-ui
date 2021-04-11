@@ -1,5 +1,4 @@
 import React from 'react';
-import { MdSearch } from 'react-icons/md';
 import { Avatar, AvatarGroup } from '../../components';
 
 export function Round() {
