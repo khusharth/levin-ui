@@ -25,6 +25,8 @@ export default [
     plugins: [
       scss({
         failOnError: true,
+        output: false,
+        output: 'dist/violetui.css',
         outputStyle: 'compressed',
         processor: (css) =>
           postcss([autoprefixer])
@@ -39,7 +41,7 @@ export default [
       external(),
       nodeResolve(),
       commonjs(),
-      // terser(),
+      terser(),
     ],
   },
 ];

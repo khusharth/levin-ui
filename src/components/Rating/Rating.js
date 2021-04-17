@@ -66,7 +66,13 @@ Rating.defaultProps = {
 };
 
 Rating.propTypes = {
-  color: PropTypes.string,
+  color: PropTypes.oneOf([
+    'default',
+    'primary',
+    'danger',
+    'warning',
+    'success',
+  ]),
   className: PropTypes.string,
   max: PropTypes.number,
   size: PropTypes.number,

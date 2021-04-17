@@ -69,7 +69,7 @@ export function TextCard() {
 export function BadgeCard() {
   return (
     <div style={{ width: '300px' }}>
-      <Card showBadge>
+      <Card showBadge badgeText="Trending">
         <CardImage image="https://images.dog.ceo/breeds/retriever-golden/n02099601_7312.jpg" />
         <CardHeader
           header="Dog: Tietian Terrier bread bread bread"

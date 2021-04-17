@@ -4,7 +4,14 @@ import { Badge } from '../../components';
 
 import './Card.scss';
 
-function Card({ className, children, horizontal, showBadge, badgePosition }) {
+function Card({
+  className,
+  children,
+  horizontal,
+  showBadge,
+  badgePosition,
+  badgeText,
+}) {
   return (
     <div
       className={`card ${horizontal ? 'card--horizontal' : ''} ${className}`}
@@ -12,7 +19,7 @@ function Card({ className, children, horizontal, showBadge, badgePosition }) {
       {children}
       {showBadge && (
         <div className={`card__badge card__badge--${badgePosition}`}>
-          <Badge>Trending!</Badge>
+          <Badge>{badgeText}</Badge>
         </div>
       )}
     </div>
@@ -24,13 +31,15 @@ Card.defaultProps = {
   showBadge: false,
   badgePosition: 'top',
   className: '',
+  badgeText: '',
 };
 
 Card.propTypes = {
   horizontal: PropTypes.bool,
   showBadge: PropTypes.bool,
-  badgePosition: PropTypes.string,
+  badgePosition: PropTypes.oneOf(['top']),
   className: PropTypes.string,
+  badgeText: PropTypes.string,
 };
 
 function CardHeader({ className, header, subheader }) {

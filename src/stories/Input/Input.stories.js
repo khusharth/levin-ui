@@ -11,7 +11,7 @@ export function DefaultInput() {
         id="name"
         value={name}
         placeholder="Enter your name here"
-        onChange={(e) => setName(e.target.value)}
+        onChange={(value) => setName(value)}
         label="Name"
         fullWidth
         // error={true}

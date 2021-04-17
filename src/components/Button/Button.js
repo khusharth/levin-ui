@@ -33,8 +33,9 @@ function Button({ children, type, className, size, disabled, onClick, href }) {
 Button.defaultProps = {
   btnType: '',
   className: '',
-  size: 'md',
+  size: 'sm',
   type: 'default',
+  disabled: false,
 };
 
 Button.propTypes = {

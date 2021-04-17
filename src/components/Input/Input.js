@@ -21,24 +21,31 @@ function Input({
 }) {
   const errorClass = error ? 'input--error' : '';
 
+  function handleChange(e) {
+    onChange(e.target.value);
+  }
+
   return (
     <div>
-      <label htmlFor={id} className="input__label">
-        {label}
+      <label className="input__label">
+        <div className="mb-4">
+          {label}
+          {required ? '*' : ''}
+        </div>
+        <input
+          name={name}
+          id={id}
+          type={type}
+          onChange={handleChange}
+          value={value}
+          placeholder={placeholder}
+          required={required}
+          className={`input ${errorClass} ${
+            fullWidth ? 'full-width' : ''
+          } ${className}`}
+          disabled={disabled}
+        />
       </label>
-      <input
-        name={name}
-        id={id}
-        type={type}
-        onChange={onChange}
-        value={value}
-        placeholder={placeholder}
-        required={required}
-        className={`input ${errorClass} ${
-          fullWidth ? 'full-width' : ''
-        } ${className}`}
-        disabled={disabled}
-      />
       {error && <div className="input__helpertext">{helperText}</div>}
     </div>
   );
@@ -46,7 +53,6 @@ function Input({
 
 Input.defaultProps = {
   id: '',
-  name: '',
   value: '',
   required: false,
   className: '',
@@ -55,6 +61,7 @@ Input.defaultProps = {
   disabled: false,
   error: false,
   fullWidth: false,
+  type: 'text',
 };
 
 Input.propTypes = {
@@ -69,6 +76,8 @@ Input.propTypes = {
   disabled: PropTypes.bool,
   error: PropTypes.bool,
   fullWidth: PropTypes.bool,
+  label: PropTypes.string,
+  type: PropTypes.string,
 };
 
 export default Input;

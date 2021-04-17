@@ -7,6 +7,10 @@
 
   &--horizontal {
     flex-direction: row;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
   }
 
   &__header {
@@ -27,6 +31,9 @@
 
   &__image-container {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__image {

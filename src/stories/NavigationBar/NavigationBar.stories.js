@@ -2,12 +2,12 @@ import React from 'react';
 import { FaGithub, FaSun } from 'react-icons/fa';
 import { NavigationBar, Button } from '../../components';
 
-import gradientUI from '../../assets/violetUI.svg';
+import violetUI from '../../assets/violetUI.svg';
 
 export function SimpleNavigation() {
   return (
     <div>
-      <NavigationBar fixed logo={gradientUI}>
+      <NavigationBar fixed logo={violetUI}>
         <li className="mr-12">
           <Button type="icon">
             <FaGithub />
