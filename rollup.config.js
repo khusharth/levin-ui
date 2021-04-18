@@ -26,7 +26,7 @@ export default [
       scss({
         failOnError: true,
         output: false,
-        output: 'dist/violetui.css',
+        output: 'dist/levinui.css',
         outputStyle: 'compressed',
         processor: (css) =>
           postcss([autoprefixer])
