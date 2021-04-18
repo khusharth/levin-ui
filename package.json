@@ -47,5 +47,14 @@
   },
   "files": [
     "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khusharth/levin-ui"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "levin-ui"
   ]
 }
