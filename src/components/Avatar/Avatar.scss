@@ -1,0 +1,94 @@
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 1.25rem;
+  user-select: none;
+
+  &__container {
+    display: flex;
+  }
+
+  &--round,
+  &--round img {
+    border-radius: 50%;
+  }
+
+  &--xs {
+    width: 32px;
+    height: 32px;
+  }
+
+  &--sm {
+    width: 48px;
+    height: 48px;
+  }
+
+  &--md {
+    width: 64px;
+    height: 64px;
+  }
+
+  &--lg {
+    width: 96px;
+    height: 96px;
+  }
+
+  &--xl {
+    width: 128px;
+    height: 128px;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__badge {
+    z-index: 1;
+    position: absolute;
+    box-shadow: 0 0 0 2px #fff;
+    right: 15%;
+    bottom: 15%;
+    transform: scale(1) translate(50%, 50%);
+    transform-origin: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+
+    &--xs {
+      height: 8px;
+      min-width: 8px;
+    }
+
+    &--sm {
+      height: 10px;
+      min-width: 10px;
+    }
+
+    &--md {
+      height: 12px;
+      min-width: 12px;
+    }
+
+    &--lg {
+      height: 16px;
+      min-width: 16px;
+    }
+
+    &--xl {
+      height: 20px;
+      min-width: 20px;
+    }
+  }
+
+  &--square &__badge {
+    right: 3%;
+    bottom: 3%;
+  }
+}

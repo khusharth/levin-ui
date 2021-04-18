@@ -1,0 +1,63 @@
+:root {
+  // Colors
+  --color-primary-light-1: #e685f4;
+  --color-primary-light-2: #df65f2;
+  --color-primary-light: #d946ef;
+  --color-primary-light-4: #d327ec;
+  --color-primary-light-5: #c313de;
+
+  --color-primary-dark-1: #b471f0;
+  --color-primary-dark-2: #a352ed;
+  --color-primary-dark: #9333ea;
+  --color-primary-dark-4: #8317e4;
+  --color-primary-dark-5: #7114c5;
+  --color-primary-dark-bg: #f5ecfd;
+
+  // TODO Proper Names
+  --color-grey-light-1: #f7f7f7;
+  --color-grey-light-2: #edeef7;
+
+  --gradient-border-color: #eee;
+
+  --gradient-text-color-light: #777;
+  --gradient-text-color-dark: #252525;
+
+  --gradient-success: #1e4620;
+  --gradient-success-bg: #edf7ed;
+  --gradient-success-icon: #4caf50;
+
+  // TODO error to danger
+  --gradient-danger: #611a15;
+  --gradient-danger-bg: #fdecea;
+  --gradient-danger-icon: #f44336;
+
+  --gradient-warning: #663c00;
+  --gradient-warning-bg: #fff4e5;
+  --gradient-warning-icon: #ff9800;
+
+  // BOX SHADOW
+  --shadow-light: 0 2px 5px rgba(0, 0, 0, 0.2);
+  --shadow-dark: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+  // FONT SIZE
+  --gradient-font-8: 0.8rem;
+  --gradient-font-10: 0.625rem;
+  --gradient-font-12: 0.75rem;
+  --gradient-font-14: 0.875rem;
+  --gradient-font-16: 1rem;
+  --gradient-font-18: 1.125rem;
+  --gradient-font-20: 1.25rem;
+
+  // Spacing
+  --gradient-spacing-0: 0rem; // 0
+  --gradient-spacing-1: 0.25rem; // 4
+  --gradient-spacing-2: 0.5rem; // 8
+  --gradient-spacing-3: 0.75rem; // 12
+  --gradient-spacing-4: 1rem; // 16
+  --gradient-spacing-5: 1.25rem; // 20
+  --gradient-spacing-6: 1.5rem; // 24
+  --gradient-spacing-7: 2rem; // 32
+  --gradient-spacing-8: 2.5rem; // 40
+  --gradient-spacing-9: 3rem; // 48
+  --gradient-spacing-10: 4rem; // 64
+}

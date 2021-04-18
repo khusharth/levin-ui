@@ -1,0 +1,129 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: inherit;
+    display: inline-block;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+    box-shadow: var(--shadow-light);
+    border: none;
+    cursor: pointer;
+  }
+
+  &-sm {
+    padding: 0.5rem 1.125rem;
+    font-size: 14.5px;
+  }
+
+  &-md {
+    padding: 0.8rem 1.5rem;
+  }
+
+  &-lg {
+    padding: 1rem 1.75rem;
+  }
+
+  &:hover {
+    box-shadow: var(--shadow-dark);
+  }
+
+  &:active,
+  &:focus {
+    box-shadow: var(--shadow-light);
+  }
+
+  &:focus {
+    // TODO Add focus style
+    outline: none;
+    // outline: thin dotted white;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  &:disabled:hover {
+    box-shadow: var(--shadow-light);
+  }
+}
+
+.btn-default {
+  &,
+  &:link,
+  &:visited {
+    color: #fff;
+    background-image: linear-gradient(
+      to right bottom,
+      var(--color-primary-light),
+      var(--color-primary-dark)
+    );
+  }
+
+  &:hover {
+    background-image: linear-gradient(
+      to right bottom,
+      var(--color-primary-dark),
+      var(--color-primary-light)
+    );
+  }
+
+  &:disabled:hover {
+    background-image: linear-gradient(
+      to right bottom,
+      var(--color-primary-light),
+      var(--color-primary-dark)
+    );
+  }
+}
+
+.btn-outlined {
+  &,
+  &:link,
+  &:visited {
+    background: none;
+    color: var(--color-primary-light-2);
+    border: 2px solid var(--color-primary-light-2);
+  }
+
+  &:hover {
+    color: var(--color-primary-dark);
+    border: 2px solid var(--color-primary-dark);
+  }
+
+  &:disabled:hover {
+    color: var(--color-primary-dark);
+    border: 2px solid var(--color-primary-dark);
+  }
+}
+
+.btn-icon {
+  &,
+  &:link,
+  &:visited {
+    padding: 0.5rem 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    background-image: linear-gradient(
+      to right bottom,
+      var(--color-primary-light),
+      var(--color-primary-dark)
+    );
+  }
+
+  &:hover {
+    background-image: linear-gradient(
+      to right bottom,
+      var(--color-primary-dark),
+      var(--color-primary-light)
+    );
+  }
+}
