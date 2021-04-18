@@ -1,7 +1,7 @@
 {
   "name": "levin-ui",
   "version": "0.0.0",
-  "description": "A React component library which makes your web development life easier",
+  "description": "A React component library which makes your web development life easier by helping in building beautiful react apps faster.",
   "main": "./dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

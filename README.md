@@ -2,7 +2,7 @@
     <img src="./src/assets/levinUI.svg" alt="levinui" width="280px">
     <br />
     <br />
-    A React component library which makes your web development life easier.
+    A React component library which makes your web development life easier by helping in building beautiful react apps faster.
 </p>
 
 # Installation
